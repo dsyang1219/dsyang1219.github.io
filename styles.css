@@ -1,7 +1,7 @@
 /* General Layout */
 body {
     font-family: "Helvetica Neue", Arial, sans-serif;
-    background-color: #fafafa;
+    background-color: #ffffff;
     color: #333;
     margin: 0;
     padding: 0;
@@ -11,26 +11,23 @@ header {
     text-align: center;
     padding: 15px 0;
     font-size: 1em;
-    font-weight: bold;
 }
 
 header nav a {
-    color: #333;
+    color: #007acc;
     text-decoration: none;
     margin: 0 20px;
-    padding: 5px 10px;
-    font-weight: 400;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 header nav a:hover {
-    background-color: #e0e0e0;
+    color: #005fa3;
 }
 
 /* Main Content Container */
 .main-content {
-    max-width: 800px;
+    max-width: 750px;
     margin: 40px auto;
     padding: 20px;
     text-align: center;
@@ -39,17 +36,14 @@ header nav a:hover {
 /* Introduction Section Styles */
 .intro {
     margin-top: 20px;
-    padding: 40px;
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
+    padding: 30px;
 }
 
 .intro h1 {
-    font-size: 2.5em;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
 }
 
 .intro p {
@@ -57,22 +51,24 @@ header nav a:hover {
     color: #666;
     line-height: 1.6;
     margin-bottom: 15px;
+    max-width: 700px;
+    margin: 15px auto;
 }
 
 .profile-image {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 20px;
-    border: 2px solid #ddd;
+    margin: 20px auto;
+    display: block;
 }
 
 /* Link Styles for Intro Section */
 .intro a {
     color: #007acc;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 
@@ -82,24 +78,22 @@ header nav a:hover {
 
 /* News Section Styles */
 .news {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-    padding: 30px;
-    margin: 30px 20px;
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 20px;
 }
 
 .news h1 {
-    font-size: 2em;
-    color: #333;
+    font-size: 2.2em;
+    color: #222;
+    font-weight: 700;
     margin-bottom: 20px;
-    padding-bottom: 10px;
-    font-weight: 500;
 }
 
 .news article {
-    padding: 20px;
-    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .news article:last-child {
@@ -107,10 +101,10 @@ header nav a:hover {
 }
 
 .news h3 {
-    font-size: 1.4em;
-    color: #333;
-    margin: 0 0 10px;
-    font-weight: 500;
+    font-size: 1.5em;
+    color: #007acc;
+    font-weight: 600;
+    margin: 0 0 8px;
 }
 
 .news p {
@@ -123,58 +117,39 @@ header nav a:hover {
 .news p em {
     font-size: 0.9em;
     color: #999;
-    margin-bottom: 5px;
-}
-
-/* Responsive Design for Mobile */
-@media (max-width: 768px) {
-    .main-content, .news {
-        padding: 20px;
-        margin: 20px;
-    }
-
-    .intro h1 {
-        font-size: 2em;
-    }
-
-    .news h1 {
-        font-size: 1.8em;
-    }
 }
 
 /* CV Page Styles */
 .cv-section {
-    max-width: 800px;
+    max-width: 750px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
 .cv-section h1 {
-    font-size: 2em;
-    color: #333;
+    font-size: 2.2em;
+    color: #222;
     text-align: center;
     margin-bottom: 20px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .cv-item {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .cv-item h2 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     color: #007acc;
-    margin-bottom: 10px;
+    font-weight: 600;
+    margin-bottom: 8px;
 }
 
-.cv-item p {
+.cv-item p, .cv-item ul li {
     font-size: 1em;
     color: #555;
     line-height: 1.6;
-    margin: 5px 0;
 }
 
 .cv-item ul {
@@ -183,7 +158,15 @@ header nav a:hover {
     color: #555;
 }
 
-.cv-item ul li {
-    margin-bottom: 5px;
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .main-content, .news, .cv-section {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .intro h1, .news h1, .cv-section h1 {
+        font-size: 2em;
+    }
 }
 
