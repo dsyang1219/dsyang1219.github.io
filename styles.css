@@ -142,3 +142,48 @@ header nav a:hover {
     }
 }
 
+/* CV Page Styles */
+.cv-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cv-section h1 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.cv-item {
+    margin-bottom: 30px;
+}
+
+.cv-item h2 {
+    font-size: 1.5em;
+    color: #007acc;
+    margin-bottom: 10px;
+}
+
+.cv-item p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+.cv-item ul {
+    list-style-type: square;
+    margin-left: 20px;
+    color: #555;
+}
+
+.cv-item ul li {
+    margin-bottom: 5px;
+}
+
