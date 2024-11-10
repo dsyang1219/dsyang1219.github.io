@@ -12,38 +12,38 @@
             <a href="index.html">About</a>
             <a href="projects.html">Projects</a>
             <a href="cv.html">CV</a>
-            <a href="news.html">News</a> <!-- New link for News tab -->
+            <a href="news.html">News</a>
         </nav>
     </header>
-    <main>
-        <section class="projects">
+    <main class="main-content">
+        <section class="projects-section">
             <h1>Projects</h1>
             
-            <article>
+            <article class="project-item">
                 <h2>Storm Shield</h2>
                 <p>A weather-resistant headband designed to protect athletes' hearing aids and alert users to nearby hazards. The first prototype includes an acoustic hydrophobic mesh and a Passive Infrared Sensor alert system. This project was submitted to the Samsung Solve for Tomorrow competition, and state finalists will be released in January.</p>
             </article>
             
-            <article>
+            <article class="project-item">
                 <h2>Green Guide App</h2>
                 <p>An app that provides localized recycling information and interactive activities to promote sustainable living. It was catered specifically for Bloomington youth and submitted to the Nextech CS for Good competition.</p>
             </article>
             
-            <article>
+            <article class="project-item">
                 <h2>Machine Learning for Real-Time Classification of Transient Events</h2>
                 <p>This research paper introduces a machine learning method used to classify astronomical transients on unlabeled lightcurve data. The model achieved an AUC-ROC score of 0.94. It was accepted to the CCIR Nobel Laureate Symposium and has been submitted to the Regeneron Science Talent Search. It was completed under the guidance of Dr. Muthukrishna (MIT).</p>
                 
                 <!-- Button to toggle abstract -->
-                <button onclick="toggleAbstract()">View Abstract</button>
+                <button class="toggle-button" onclick="toggleAbstract()">View Abstract</button>
                 
                 <!-- Hidden abstract section -->
-                <p id="abstract" style="display: none; margin-top: 10px;">
+                <p id="abstract" class="abstract" style="display: none;">
                     The rapid advancement of astronomical survey technologies, such as the Vera C. Rubin Observatory’s Legacy Survey of Space and Time (LSST), is expected to generate millions of transient events annually, posing significant challenges in processing large volumes of unlabeled data. To address this, a deep learning model was developed, combining a Recurrent Neural Network Variational Autoencoder (RNN-VAE) for dimensionality reduction with a Gradient Boosting Classifier for real-time classification of transient events. This model efficiently classifies galactic and extragalactic transients without the need for labeled data. Using the PLAsTiCC dataset, the model achieved an AUC-ROC score of 0.94 and F-1 score of 0.89, demonstrating strong performance in distinguishing between various transient classes, including rare events. This approach offers a scalable solution for real-time astronomical surveys, enhancing both classification accuracy and resource allocation in future data-rich environments.
                 </p>
                 
                 <!-- Button to view full report -->
                 <div class="button-container">
-                    <button onclick="window.open('Report- Regeneron.pdf')">View Full Report</button>
+                    <button class="view-report-button" onclick="window.open('Report-Regeneron.pdf')">View Full Report</button>
                 </div>
             </article>
 
@@ -54,13 +54,8 @@
     <script>
         function toggleAbstract() {
             const abstract = document.getElementById("abstract");
-            if (abstract.style.display === "none") {
-                abstract.style.display = "block";
-            } else {
-                abstract.style.display = "none";
-            }
+            abstract.style.display = abstract.style.display === "none" ? "block" : "none";
         }
     </script>
 </body>
 </html>
-
