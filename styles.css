@@ -1,7 +1,7 @@
 /* General Layout */
 body {
     font-family: "Helvetica Neue", Arial, sans-serif;
-    background-color: #ffffff;
+    background-color: #f9f9f9;
     color: #333;
     margin: 0;
     padding: 0;
@@ -11,87 +11,94 @@ header {
     text-align: center;
     padding: 15px 0;
     font-size: 1em;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 header nav a {
-    color: #007acc;
+    color: #333;
     text-decoration: none;
-    margin: 0 20px;
+    margin: 0 15px;
+    padding: 10px;
     font-weight: 500;
-    transition: color 0.3s ease;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header nav a:hover {
-    color: #005fa3;
+    background-color: #e0f3ff;
+    color: #007acc;
 }
 
 /* Main Content Container */
 .main-content {
-    max-width: 750px;
+    max-width: 850px;
     margin: 40px auto;
     padding: 20px;
-    text-align: center;
 }
 
 /* Introduction Section Styles */
 .intro {
-    margin-top: 20px;
-    padding: 30px;
+    text-align: center;
+    padding: 50px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
 }
 
 .intro h1 {
-    font-size: 2.8em;
+    font-size: 2.5em;
+    color: #333;
     font-weight: 700;
-    color: #222;
     margin-bottom: 10px;
 }
 
 .intro p {
-    font-size: 1.1em;
+    font-size: 1.15em;
     color: #666;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    max-width: 700px;
-    margin: 15px auto;
+    line-height: 1.7;
+    margin: 10px 0;
 }
 
 .profile-image {
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     object-fit: cover;
-    margin: 20px auto;
-    display: block;
+    margin-bottom: 20px;
+    border: 2px solid #007acc;
 }
 
-/* Link Styles for Intro Section */
-.intro a {
+/* Link Styles */
+.intro a, .cv-section a {
     color: #007acc;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
-.intro a:hover {
+.intro a:hover, .cv-section a:hover {
     color: #005fa3;
 }
 
 /* News Section Styles */
 .news {
-    max-width: 750px;
-    margin: 40px auto;
-    padding: 20px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
 }
 
 .news h1 {
     font-size: 2.2em;
-    color: #222;
-    font-weight: 700;
+    color: #333;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 
 .news article {
-    margin-bottom: 20px;
     padding: 15px 0;
     border-bottom: 1px solid #e0e0e0;
 }
@@ -101,17 +108,15 @@ header nav a:hover {
 }
 
 .news h3 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     color: #007acc;
     font-weight: 600;
-    margin: 0 0 8px;
 }
 
 .news p {
     font-size: 1em;
     color: #555;
     line-height: 1.6;
-    margin: 5px 0 15px;
 }
 
 .news p em {
@@ -121,18 +126,20 @@ header nav a:hover {
 
 /* CV Page Styles */
 .cv-section {
-    max-width: 750px;
+    max-width: 850px;
     margin: 40px auto;
-    padding: 20px;
-    text-align: left;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .cv-section h1 {
     font-size: 2.2em;
-    color: #222;
+    color: #333;
     text-align: center;
-    margin-bottom: 20px;
     font-weight: 700;
+    margin-bottom: 30px;
 }
 
 .cv-item {
@@ -140,28 +147,37 @@ header nav a:hover {
 }
 
 .cv-item h2 {
-    font-size: 1.4em;
+    font-size: 1.5em;
     color: #007acc;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .cv-item p, .cv-item ul li {
     font-size: 1em;
     color: #555;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .cv-item ul {
     list-style-type: square;
     margin-left: 20px;
-    color: #555;
 }
 
-/* Responsive Design for Mobile */
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #888;
+    background-color: #f5f5f5;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .main-content, .news, .cv-section {
-        padding: 20px;
+        padding: 15px;
         margin: 20px;
     }
 
@@ -169,4 +185,3 @@ header nav a:hover {
         font-size: 2em;
     }
 }
-
