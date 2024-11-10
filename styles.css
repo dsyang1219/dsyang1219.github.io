@@ -37,95 +37,8 @@ header nav a:hover {
     padding: 20px;
 }
 
-/* Introduction Section Styles */
-.intro {
-    text-align: center;
-    padding: 50px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    margin-bottom: 30px;
-}
-
-.intro h1 {
-    font-size: 2.5em;
-    color: #333;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.intro p {
-    font-size: 1.15em;
-    color: #666;
-    line-height: 1.7;
-    margin: 10px 0;
-}
-
-.profile-image {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border: 2px solid #007acc;
-}
-
-/* Link Styles */
-.intro a, .cv-section a {
-    color: #007acc;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.intro a:hover, .cv-section a:hover {
-    color: #005fa3;
-}
-
-/* News Section Styles */
-.news {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    margin-bottom: 30px;
-}
-
-.news h1 {
-    font-size: 2.2em;
-    color: #333;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.news article {
-    padding: 15px 0;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.news article:last-child {
-    border-bottom: none;
-}
-
-.news h3 {
-    font-size: 1.4em;
-    color: #007acc;
-    font-weight: 600;
-}
-
-.news p {
-    font-size: 1em;
-    color: #555;
-    line-height: 1.6;
-}
-
-.news p em {
-    font-size: 0.9em;
-    color: #999;
-}
-
-/* CV Page Styles */
-.cv-section {
+/* CV and Projects Section Styling */
+.cv-section, .projects-section {
     max-width: 850px;
     margin: 40px auto;
     padding: 30px;
@@ -134,7 +47,7 @@ header nav a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-.cv-section h1 {
+.cv-section h1, .projects-section h1 {
     font-size: 2.2em;
     color: #333;
     text-align: center;
@@ -142,57 +55,8 @@ header nav a:hover {
     margin-bottom: 30px;
 }
 
-.cv-item {
-    margin-bottom: 25px;
-}
-
-.cv-item h2 {
-    font-size: 1.5em;
-    color: #007acc;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.cv-item p, .cv-item ul li {
-    font-size: 1em;
-    color: #555;
-    line-height: 1.7;
-}
-
-.cv-item ul {
-    list-style-type: square;
-    margin-left: 20px;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
-    color: #888;
-    background-color: #f5f5f5;
-    margin-top: 40px;
-}
-
-/* Projects Section Styles */
-.projects-section {
-    max-width: 850px;
-    margin: 40px auto;
-    padding: 30px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-
-.projects-section h1 {
-    font-size: 2.2em;
-    color: #333;
-    text-align: center;
-    font-weight: 700;
-    margin-bottom: 30px;
-}
-
-.project-item {
+/* Project and CV Item Styles */
+.cv-item, .project-item {
     margin-bottom: 25px;
     padding: 20px;
     background-color: #f9f9f9;
@@ -201,17 +65,23 @@ footer {
     border-left: 4px solid #007acc;
 }
 
-.project-item h2 {
+.cv-item h2, .project-item h2 {
     font-size: 1.5em;
     color: #007acc;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
-.project-item p {
+.cv-item p, .project-item p, .cv-item ul li {
     font-size: 1em;
     color: #555;
     line-height: 1.7;
+}
+
+/* List Styling for Skills and Awards */
+.cv-item ul, .project-item ul {
+    list-style-type: square;
+    margin-left: 20px;
 }
 
 /* Abstract and Button Styling */
@@ -241,16 +111,16 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .projects-section {
+    .cv-section, .projects-section {
         padding: 20px;
         margin: 20px;
     }
 
-    .projects-section h1 {
+    .cv-section h1, .projects-section h1 {
         font-size: 2em;
     }
 
-    .project-item h2 {
+    .cv-item h2, .project-item h2 {
         font-size: 1.3em;
     }
 }
